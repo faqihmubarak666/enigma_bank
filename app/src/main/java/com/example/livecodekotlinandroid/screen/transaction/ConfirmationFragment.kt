@@ -24,7 +24,6 @@ class ConfirmationFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-
         description_text.text =  arguments?.getString("description")
     }
 

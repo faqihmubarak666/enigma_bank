@@ -49,8 +49,8 @@ class RecipientFragment : Fragment(), View.OnClickListener {
                 navController.navigate(
                     R.id.action_recipientFragment_to_amountFragment,
                     bundleOf(
-                        "user_owner_id" to recipient_input.text.toString(),
-                        "destination" to bank_input.text.toString()
+                        "user_owner_id" to id_transaction_input.text.toString(),
+                        "destination" to destination_input.text.toString()
                     )
                 )
             }

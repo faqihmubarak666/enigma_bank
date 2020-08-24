@@ -38,10 +38,10 @@
                 android:src="@drawable/ic_baseline_account_box_24"/>
 
             <EditText
-                android:id="@+id/recipient_input"
+                android:id="@+id/id_transaction_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Recipient"
+                android:hint="Id Transaction"
                 android:layout_marginVertical="10dp"
                 android:textColor="#4169E1"
                 android:textAlignment="textStart"
@@ -60,11 +60,11 @@
                 android:layout_height="70dp"
                 android:src="@drawable/ic_baseline_account_balance_2"/>
             <EditText
-                android:id="@+id/bank_input"
+                android:id="@+id/destination_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="10dp"
-                android:hint="Bank"
+                android:hint="Name Recipient"
                 android:textColor="#4169E1"
                 android:textAlignment="textStart"
                 android:textSize="20dp" />

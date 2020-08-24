@@ -1,5 +1,7 @@
 package com.example.livecodekotlinandroid.screen
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -38,6 +40,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
+        val intent = Intent(Intent.ACTION_DIAL)
         when (v) {
             button_transaction -> {
                 navController.navigate(R.id.action_homeFragment_to_recipientFragment)
@@ -46,7 +49,9 @@ class HomeFragment : Fragment(), View.OnClickListener {
                 navController.navigate(R.id.action_homeFragment_to_historyFragment)
             }
             button_phone -> {
-                Toast.makeText(context, "Call 021-119922", Toast.LENGTH_LONG).show()
+                intent.data = Uri.parse("tel: 1945")
+                startActivity(intent)
+                Toast.makeText(context, "Call 1945", Toast.LENGTH_LONG).show()
             }
 
         }
