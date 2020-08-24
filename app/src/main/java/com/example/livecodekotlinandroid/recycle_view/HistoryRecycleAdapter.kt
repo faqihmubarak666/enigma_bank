@@ -28,7 +28,6 @@ class HistoryRecycleAdapter(private val transactionList: List<Bank>) :
     }
 
     override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
-//        holder.imageMoney = transactionList[position].destination
         holder.dateTransaction.text = transactionList[position].trans_date
         holder.amountTransaction.text = transactionList[position].amount
     }
@@ -37,7 +36,6 @@ class HistoryRecycleAdapter(private val transactionList: List<Bank>) :
 
 class HistoryViewHolder(v: View) : RecyclerView.ViewHolder(v) {
 
-//    var imageMoney: ImageView = v.findViewById(R.id.image_recycle)
     var dateTransaction: TextView = v.findViewById(R.id.date_recycle)
     var amountTransaction: TextView = v.findViewById(R.id.amount_recycle)
 }
