@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.livecodekotlinandroid.R
@@ -12,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(), View.OnClickListener {
 
-    lateinit var navController : NavController
+    lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +30,7 @@ class HomeFragment : Fragment(), View.OnClickListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        navController= Navigation.findNavController(view)
+        navController = Navigation.findNavController(view)
 
         button_transaction.setOnClickListener(this)
         button_history.setOnClickListener(this)
@@ -37,10 +38,16 @@ class HomeFragment : Fragment(), View.OnClickListener {
     }
 
     override fun onClick(v: View?) {
-        when(v){
-            button_transaction -> {navController.navigate(R.id.action_homeFragment_to_recipientFragment)}
-            button_history -> {navController.navigate(R.id.action_homeFragment_to_historyFragment)}
-            button_phone -> {}
+        when (v) {
+            button_transaction -> {
+                navController.navigate(R.id.action_homeFragment_to_recipientFragment)
+            }
+            button_history -> {
+                navController.navigate(R.id.action_homeFragment_to_historyFragment)
+            }
+            button_phone -> {
+                Toast.makeText(context, "Call 021-119922", Toast.LENGTH_LONG).show()
+            }
 
         }
     }
