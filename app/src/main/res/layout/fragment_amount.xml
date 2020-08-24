@@ -8,7 +8,7 @@
     tools:context=".screen.transaction.AmountFragment">
 
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/materialCardView1"
         android:layout_width="match_parent"
         android:layout_height="350dp"
@@ -80,6 +80,6 @@
                 android:background="#4169E1"
                 android:text="NEXT"/>
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

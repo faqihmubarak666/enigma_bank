@@ -8,7 +8,7 @@
     tools:context=".screen.transaction.ConfirmationFragment">
 
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/materialCardView2"
         android:layout_width="match_parent"
         android:layout_height="350dp"
@@ -35,7 +35,7 @@
                 android:layout_height="150dp"
                 android:src="@drawable/ic_baseline_check_24"/>
 
-            <com.google.android.material.textview.MaterialTextView
+            <TextView
                 android:id="@+id/description_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -55,6 +55,6 @@
                 android:text="DONE" />
 
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

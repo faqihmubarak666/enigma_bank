@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".screen.transaction.RecipientFragment">
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/materialCardView4"
         android:layout_width="match_parent"
         android:layout_height="350dp"
@@ -79,7 +79,7 @@
                 android:background="#4169E1"
                 android:text="NEXT"/>
         </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 
 
 
