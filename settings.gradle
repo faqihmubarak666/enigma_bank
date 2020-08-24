@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "[LIVE CODE] Kotlin Android"
