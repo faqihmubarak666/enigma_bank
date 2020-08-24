@@ -10,7 +10,7 @@ interface BankAPI {
     @GET("transactions")
     fun getAllTransaction(): Call<List<Bank>>
 
-    @POST("transactions")
+    @POST("transaction")
     fun createTransaction(@Body bank: Bank): Call<Bank>
 
 }

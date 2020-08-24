@@ -29,7 +29,7 @@ class HistoryRecycleAdapter(private val transactionList: List<Bank>) :
 
     override fun onBindViewHolder(holder: HistoryViewHolder, position: Int) {
         holder.dateTransaction.text = transactionList[position].trans_date
-        holder.amountTransaction.text = transactionList[position].amount
+        holder.amountTransaction.text = transactionList[position].amount.toString()
     }
 
 }

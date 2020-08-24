@@ -38,7 +38,7 @@ class BankRepository (val bankAPI: BankAPI){
 
             override fun onFailure(call: Call<Bank>, t: Throwable) {
                 t.printStackTrace()
-                println("Failed Created Film Because  ${t.localizedMessage}")
+                println("Failed Created Transaction Because  ${t.localizedMessage}")
             }
 
         })

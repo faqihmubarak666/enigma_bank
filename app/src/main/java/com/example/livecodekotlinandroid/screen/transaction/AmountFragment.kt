@@ -16,6 +16,9 @@ import com.example.livecodekotlinandroid.bank.Bank
 import com.example.livecodekotlinandroid.bank.BankViewModel
 import kotlinx.android.synthetic.main.fragment_amount.*
 import kotlinx.android.synthetic.main.fragment_recipient.*
+import java.text.DateFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class AmountFragment : Fragment(), View.OnClickListener {
 
@@ -45,14 +48,18 @@ class AmountFragment : Fragment(), View.OnClickListener {
 
 
     override fun onClick(v: View?) {
-        val detination = arguments?.getString("destination")
-        val trans_date = arguments?.getString("trans_date")
+        val user_owner_id = arguments?.getString("user_owner_id")
+        val destination = arguments?.getString("destination")
+        val current = LocalDateTime.now()
+        val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+        val formatted = current.format(formatter)
         when (v) {
             button_next_amount -> {
                 val transaction = Bank(
-                    destination = detination.toString(),
-                    trans_date = trans_date.toString(),
-                    amount = amount_input.text.toString(),
+                    user_owner_id = user_owner_id!!.toInt(),
+                    destination = destination.toString(),
+                    trans_date = formatted,
+                    amount = amount_input.text.toString().toInt(),
                     description = description_input.text.toString()
                 )
                 bankViewModel.saveTransaction(transaction)
