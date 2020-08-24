@@ -39,7 +39,7 @@
                     android:text="01 July 2020 07:00 pm"/>
 
                 <TextView
-                    android:id="@+id/mount_recycle"
+                    android:id="@+id/amount_recycle"
                     android:layout_marginEnd="5dp"
                     android:layout_width="match_parent"
                     android:gravity="right"

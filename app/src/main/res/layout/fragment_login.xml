@@ -8,10 +8,9 @@
     tools:context=".screen.LoginFragment">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/materialCardView"
+        android:id="@+id/materialCardView3"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:backgroundTint="#fffff"
         android:layout_margin="20dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"

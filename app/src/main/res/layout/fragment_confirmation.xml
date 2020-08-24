@@ -8,11 +8,10 @@
     tools:context=".screen.transaction.ConfirmationFragment">
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/materialCardView"
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2"
         android:layout_width="match_parent"
         android:layout_height="350dp"
-        android:backgroundTint="#fffff"
         android:layout_margin="20dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="5dp"
@@ -55,6 +54,6 @@
                 android:background="#4169E1"
                 android:text="DONE" />
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
